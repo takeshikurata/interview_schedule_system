@@ -17,8 +17,8 @@
                 </tr>
                 <c:forEach var="department" items="${departments}" varStatus="status">
                     <tr class="row${status.count % 2}">
-                        <td><c:out value="${department_code}" /></td>
-                        <td><c:out value="${department_name}" /></td>
+                        <td><c:out value="${department.department_code}" /></td>
+                        <td><c:out value="${department.department_name}" /></td>
                         <td>
                             <c:choose>
                                 <c:when test="${department.is_deleted == 1}">

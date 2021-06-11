@@ -7,6 +7,7 @@ import javax.persistence.EntityManager;
 
 import models.Department;
 import utils.DBUtil;
+import utils.RegexUtil;
 
 public class DepartmentValidator {
 
@@ -37,6 +38,11 @@ public class DepartmentValidator {
             return "部署コードを入力してください";
         }
 
+        // 型桁チェック
+        if(department_code.length() != 2 || !RegexUtil.halfWidthNumberCheck(department_code)) {
+            return "部署コードは半角数字2桁で入力してください";
+        }
+
         // すでに登録されている部署コードとの重複チェック
         if(departmentCodeDuplicateCheckFlag) {
             EntityManager em = DBUtil.createEntityManager();
@@ -59,4 +65,5 @@ public class DepartmentValidator {
 
         return "";
     }
+
 }
