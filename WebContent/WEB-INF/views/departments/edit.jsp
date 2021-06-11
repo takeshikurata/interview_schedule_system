@@ -5,7 +5,7 @@
         <c:choose>
             <c:when test="${department != null}">
                 <h2>id : ${department.id} の部署情報 編集ページ</h2>
-                <form method="POST" action="<c:out value='/departments/update' />">
+                <form method="POST" action="<c:url value='/departments/update' />">
                     <c:import url="_form.jsp" />
                 </form>
                 <script>
