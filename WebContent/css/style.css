@@ -90,3 +90,14 @@ tr.row1 {
 tr.row0 {
     background-color: #ffffff;
 }
+
+table#employee_list th {
+    width: 30%;
+    padding: 10px 2%;
+}
+
+table#employee_list td {
+    width: 29%;
+    padding: 10px 2%;
+}
+
