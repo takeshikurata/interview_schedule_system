@@ -18,17 +18,21 @@ import javax.persistence.Table;
             query = "select d from Department as d order by d.id desc"
             ),
     @NamedQuery(
-            name = "getAllDepartmentsNotDeleted",
-            query = "select d from Department as d where d.is_deleted = 0 order by d.id desc"
-            ),
-    @NamedQuery(
             name = "getDepartmentsCount",
             query = "select count(d) from Department as d"
             ),
     @NamedQuery(
             name = "checkRegisteredDepartmentCode",
             query = "select count(d) from Department as d where d.department_code = :department_code"
-            )
+            ),
+    @NamedQuery(
+            name = "getAllDepartmentsNotDeleted",
+            query = "select d from Department as d where d.is_deleted = 0 order by d.id desc"
+            ),
+    @NamedQuery(
+            name = "getDepartment",
+            query = "select d from Department as d where d.id = :id"
+            ),
 })
 @Entity
 public class Department {

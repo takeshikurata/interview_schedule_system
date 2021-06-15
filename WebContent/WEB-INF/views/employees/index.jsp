@@ -13,19 +13,24 @@
                 <tr>
                     <th>社員番号</th>
                     <th>氏名</th>
+                    <th>所属部署</th>
                     <th>操作</th>
                 </tr>
                 <c:forEach var="employee" items="${employees}" varStatus="status">
                     <tr class="row${status.count % 2}">
-                        <td><c:out value="${employee_code}" /></td>
-                        <td><c:out value="${employee_name}" /></td>
+                        <td><c:out value="${employee.employee_code}" /></td>
+                        <td><c:out value="${employee.employee_name}" /></td>
+                        <td>
+                            <c:out value="${employee.department.department_code} :
+                            ${employee.department.department_name}" />
+                        </td>
                         <td>
                             <c:choose>
                                 <c:when test="${employee.is_deleted == 1}">
                                     (削除済み)
                                 </c:when>
                                 <c:otherwise>
-                                    <a href="<c:url value='/employees/show?id=${employee_id}' />">詳細を表示</a>
+                                    <a href="<c:url value='/employees/show?id=${employee.id}' />">詳細を表示</a>
                                 </c:otherwise>
                             </c:choose>
                         </td>
@@ -47,7 +52,7 @@
                 </c:choose>
             </c:forEach>
         </div>
-        <p><a href="<c:url value='/employees/new' />"></a>新規社員情報の登録</p>
+        <p><a href="<c:url value='/employees/new' />">新規社員情報の登録</a></p>
 
     </c:param>
 </c:import>
