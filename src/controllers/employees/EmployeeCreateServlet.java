@@ -58,9 +58,8 @@ public class EmployeeCreateServlet extends HttpServlet {
             e.setIs_deleted(0);
 
             // Department情報の設定
-            int department_id = Integer.parseInt(request.getParameter("department_id"));
-            Department department = em.createNamedQuery("getDepartment", Department.class)
-                    .setParameter("id", department_id).getSingleResult();
+            Department department = em.find(Department.class,
+                    Integer.parseInt(request.getParameter("department_id")));
             e.setDepartment(department);
 
             List<String> errors = EmployeeValidator.validate(e, true, true);
