@@ -18,6 +18,10 @@ import javax.persistence.Table;
             query = "select d from Department as d order by d.id desc"
             ),
     @NamedQuery(
+            name = "getAllDepartmentsNotDeleted",
+            query = "select d from Department as d where d.is_deleted = 0 order by d.id desc"
+            ),
+    @NamedQuery(
             name = "getDepartmentsCount",
             query = "select count(d) from Department as d"
             ),
