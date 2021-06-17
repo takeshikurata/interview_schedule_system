@@ -76,11 +76,11 @@ public class Schedule {
     @Column(name = "pass_fail_status")
     private Integer pass_fail_status;
 
-    @Column(name = "first_interview_schedule_date")
-    private Date first_interview_schedule_date;
+    @Column(name = "first_interview_scheduled_date")
+    private Date first_interview_scheduled_date;
 
-    @Column(name = "first_interview_schedule_time")
-    private Time first_interview_schedule_time;
+    @Column(name = "first_interview_scheduled_time")
+    private Time first_interview_scheduled_time;
 
     @Column(name = "first_interview_format")
     private Integer first_interview_format;
@@ -103,11 +103,11 @@ public class Schedule {
     @Column(name = "first_interview_time")
     private Time first_interview_time;
 
-    @Column(name = "second_interview_schedule_date")
-    private Date second_interview_schedule_date;
+    @Column(name = "second_interview_scheduled_date")
+    private Date second_interview_scheduled_date;
 
-    @Column(name = "second_interview_schedule_time")
-    private Time second_interview_schedule_time;
+    @Column(name = "second_interview_scheduled_time")
+    private Time second_interview_scheduled_time;
 
     @Column(name = "second_interview_format")
     private Integer second_interview_format;
@@ -255,20 +255,20 @@ public class Schedule {
         this.pass_fail_status = pass_fail_status;
     }
 
-    public Date getFirst_interview_schedule_date() {
-        return first_interview_schedule_date;
+    public Date getFirst_interview_scheduled_date() {
+        return first_interview_scheduled_date;
     }
 
-    public void setFirst_interview_schedule_date(Date first_interview_schedule_date) {
-        this.first_interview_schedule_date = first_interview_schedule_date;
+    public void setFirst_interview_scheduled_date(Date first_interview_scheduled_date) {
+        this.first_interview_scheduled_date = first_interview_scheduled_date;
     }
 
-    public Time getFirst_interview_schedule_time() {
-        return first_interview_schedule_time;
+    public Time getFirst_interview_scheduled_time() {
+        return first_interview_scheduled_time;
     }
 
-    public void setFirst_interview_schedule_time(Time first_interview_schedule_time) {
-        this.first_interview_schedule_time = first_interview_schedule_time;
+    public void setFirst_interview_scheduled_time(Time first_interview_scheduled_time) {
+        this.first_interview_scheduled_time = first_interview_scheduled_time;
     }
 
     public Integer getFirst_interview_format() {
@@ -327,20 +327,20 @@ public class Schedule {
         this.first_interview_time = first_interview_time;
     }
 
-    public Date getSecond_interview_schedule_date() {
-        return second_interview_schedule_date;
+    public Date getSecond_interview_scheduled_date() {
+        return second_interview_scheduled_date;
     }
 
-    public void setSecond_interview_schedule_date(Date second_interview_schedule_date) {
-        this.second_interview_schedule_date = second_interview_schedule_date;
+    public void setSecond_interview_scheduled_date(Date second_interview_scheduled_date) {
+        this.second_interview_scheduled_date = second_interview_scheduled_date;
     }
 
-    public Time getSecond_interview_schedule_time() {
-        return second_interview_schedule_time;
+    public Time getSecond_interview_scheduled_time() {
+        return second_interview_scheduled_time;
     }
 
-    public void setSecond_interview_schedule_time(Time second_interview_schedule_time) {
-        this.second_interview_schedule_time = second_interview_schedule_time;
+    public void setSecond_interview_scheduled_time(Time second_interview_scheduled_time) {
+        this.second_interview_scheduled_time = second_interview_scheduled_time;
     }
 
     public Integer getSecond_interview_format() {
