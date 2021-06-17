@@ -137,10 +137,10 @@ table#schedule_list .schedule_project_title {
     width: 10%;
 }
 table#schedule_list .schedule_place {
-    width: 10%;
+    width: 5%;
 }
 table#schedule_list .schedule_ordering_company {
-    width: 10%;
+    width: 5%;
 }
 table#schedule_list .schedule_sales_employee_name {
     width: 10%;
@@ -152,19 +152,19 @@ table#schedule_list .schedule_aspiration_situation {
     width: 5%;
 }
 table#schedule_list .schedule_interview_situation {
-    width: 5%;
+    width: 10%;
 }
 table#schedule_list .schedule_pass_fail_status {
     width: 5%;
 }
 table#schedule_list .schedule_first_interview_scheduled_date {
-    width: 5%;
+    width: 10%;
 }
 table#schedule_list .schedule_first_interview_scheduled_time {
     width: 5%;
 }
 table#schedule_list .schedule_second_interview_scheduled_date {
-    width: 5%;
+    width: 10%;
 }
 table#schedule_list .schedule_second_interview_scheduled_time {
     width: 5%;

@@ -50,7 +50,7 @@ public class SchedulesIndexServlet extends HttpServlet {
 
         em.close();
 
-        request.setAttribute("shedules", schedules);
+        request.setAttribute("schedules", schedules);
         request.setAttribute("schedules_count", schedules_count);
         request.setAttribute("page", page);
         if(request.getSession().getAttribute("flush") != null) {
