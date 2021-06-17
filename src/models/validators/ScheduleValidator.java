@@ -32,7 +32,7 @@ public class ScheduleValidator {
 
     private static String validateOrderingCompany(String ordering_company) {
         if(ordering_company == null || ordering_company.equals("")) {
-            return "発注企業を入力してください";
+            return "上位会社（発注元企業）を入力してください";
         }
         return "";
     }

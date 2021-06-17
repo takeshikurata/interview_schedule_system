@@ -44,9 +44,7 @@ public class SchedulesCreateServlet extends HttpServlet {
             Schedule s = new Schedule();
 
             // Employee情報の設定
-            Employee employee = em.find(Employee.class,
-                    Integer.parseInt(request.getParameter("employee_id")));
-            s.setEmployee(employee);
+            s.setEmployee((Employee)request.getSession().getAttribute("login_employee"));
 
             s.setProject_title(request.getParameter("project_title"));
             s.setPlace(request.getParameter("place"));

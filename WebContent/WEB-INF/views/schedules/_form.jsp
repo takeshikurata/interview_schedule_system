@@ -10,15 +10,6 @@
 
     </div>
 </c:if>
-<label for="employee_id">氏名</label><br />
-<select name="employee_id">
-    <c:forEach var="employee" items="${employees}">
-        <option value="${employee.id}"<c:if test="${employee.id == schedule.employee.id}"> selected</c:if>>
-        ${employee.employee_code} : ${employee.employee_name}</option>
-    </c:forEach>
-</select>
-<br /><br />
-
 <label for="project_title">案件名</label><br />
 <input type="text" name="project_title" value="${schedule.project_title}" />
 <br /><br />
