@@ -19,7 +19,7 @@ import javax.persistence.Table;
 @Table(name = "schedules")
 @NamedQueries({
     @NamedQuery(
-            name = "getAllschedules",
+            name = "getAllSchedules",
             query = "SELECT s FROM Schedule AS s ORDER BY s.id DESC"
             ),
     @NamedQuery(
@@ -36,7 +36,7 @@ public class Schedule {
 
     @ManyToOne
     @JoinColumn(name = "employee_id", nullable = false)
-    private Employee e;
+    private Employee employee;
 
     @Column(name = "project_title", length = 255, nullable = false)
     private String project_title;
@@ -52,7 +52,7 @@ public class Schedule {
 
     @ManyToOne
     @JoinColumn(name = "sales_employee_id", nullable = false)
-    private Employee sales_e;
+    private Employee sales_employee;
 
     @Column(name = "introduce_date")
     private Date introduce_date;
@@ -151,12 +151,12 @@ public class Schedule {
         this.id = id;
     }
 
-    public Employee getE() {
-        return e;
+    public Employee getEmployee() {
+        return employee;
     }
 
-    public void setE(Employee e) {
-        this.e = e;
+    public void setEmployee(Employee employee) {
+        this.employee = employee;
     }
 
     public String getProject_title() {
@@ -191,12 +191,12 @@ public class Schedule {
         this.ordering_company = ordering_company;
     }
 
-    public Employee getSales_e() {
-        return sales_e;
+    public Employee getSales_employee() {
+        return sales_employee;
     }
 
-    public void setSales_e(Employee sales_e) {
-        this.sales_e = sales_e;
+    public void setSales_employee(Employee sales_employee) {
+        this.sales_employee = sales_employee;
     }
 
     public Date getIntroduce_date() {
