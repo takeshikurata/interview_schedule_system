@@ -7,10 +7,9 @@
 		<class>models.Schedule</class>
 		<properties>
 			<property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>
-			<property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost/interview_schedule_system?useSSL=false&amp;useUnicode=true&amp;characterEncoding=utf8"/>
-			<property name="javax.persistence.jdbc.user" value="issuser"/>
-			<property name="javax.persistence.jdbc.password" value="isspass"/>
-			<property name="javax.persistence.schema-generation.database.action" value="create"/>
+			<property name="javax.persistence.jdbc.url" value="jdbc:mysql://us-cdbr-east-04.cleardb.com/heroku_49e7db86b08ede1?useSSL=false&amp;useUnicode=true&amp;characterEncoding=utf8"/>
+			<property name="javax.persistence.jdbc.user" value="b6ebd7ef274e14"/>
+			<property name="javax.persistence.jdbc.password" value="13cac60a"/>
 			<property name="hibernate.dialect" value="org.hibernate.dialect.MySQL5Dialect"/>
 			<property name="hibernate.show_sql" value="true"/>
 			<property name="hibernate.format_sql" value="true"/>
