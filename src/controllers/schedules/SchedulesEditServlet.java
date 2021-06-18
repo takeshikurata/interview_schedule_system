@@ -50,7 +50,7 @@ public class SchedulesEditServlet extends HttpServlet {
 
             request.setAttribute("schedule", s);
             request.setAttribute("_token", request.getSession().getId());
-            request.setAttribute("schedule_id", s.getId());
+            request.getSession().setAttribute("schedule_id", s.getId());
         }
 
         RequestDispatcher rd = request.getRequestDispatcher("/WEB-INF/views/schedules/edit.jsp");
