@@ -172,3 +172,7 @@ table#schedule_list .schedule_second_interview_scheduled_time {
 table#schedule_list .schedule_action {
     width: 10%;
 }
+
+pre {
+    font-family: "Hiragino Kaku Gothic Pro",Meiryo,"MS PGothic",Helvetica,Arial,sans-serif;
+}

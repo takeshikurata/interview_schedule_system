@@ -69,7 +69,7 @@
                         <td class="schedule_second_interview_scheduled_time">
                             <fmt:formatDate value='${schedule.second_interview_scheduled_time}' pattern='HH:mm' />
                         </td>
-                        <td class="schedule_action"><a href="<c:url value='/schedules/show?id=${shcedule.id}' />">詳細を見る</a></td>
+                        <td class="schedule_action"><a href="<c:url value='/schedules/show?id=${schedule.id}' />">詳細を見る</a></td>
                     </tr>
                 </c:forEach>
             </tbody>
