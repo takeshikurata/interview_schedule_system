@@ -26,6 +26,14 @@ import javax.persistence.Table;
             name = "getSchedulesCount",
             query = "SELECT COUNT(s) FROM Schedule AS s"
             ),
+    @NamedQuery(
+            name = "getMyAllSchedules",
+            query = "SELECT s FROM Schedule AS s WHERE s.employee = :employee ORDER BY s.id DESC"
+            ),
+    @NamedQuery(
+            name = "getMySchedulesCount",
+            query = "SELECT COUNT(s) FROM Schedule AS s WHERE s.employee = :employee"
+            ),
 })
 @Entity
 public class Schedule {
