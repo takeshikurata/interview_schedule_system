@@ -44,11 +44,11 @@
 <br /><br />
 
 <label for="number_of_interviews">予定面談回数</label><br />
-<input type="text" name="number_of_interviews" value="${schedule.number_of_interviews}" />
+<input type="number" min="0" max="5" name="number_of_interviews" value="${schedule.number_of_interviews}" />
 <br /><br />
 
 <label for="priority">優先順位</label><br />
-<input type="text" name="priority" value="${schedule.priority}" />
+<input type="number" min="1" max="20" name="priority" value="${schedule.priority}" />
 <br /><br />
 
 <label for="aspiration_situation">志望状況</label><br />
