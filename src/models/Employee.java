@@ -36,6 +36,11 @@ import javax.persistence.Table;
             name = "getAllEmployeesNotDeleted",
             query = "SELECT e FROM Employee AS e WHERE e.is_deleted = 0 ORDER BY e.id DESC"
             ),
+    @NamedQuery(
+            name = "getAllSalesEmployeesNotDeleted",
+            query = "SELECT e FROM Employee AS e WHERE e.is_deleted = 0 AND "
+                    + "e.department.department_name like '営業%' ORDER BY e.id DESC"
+            ),
 })
 @Entity
 public class Employee {

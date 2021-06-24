@@ -43,7 +43,7 @@ public class SchedulesNewServlet extends HttpServlet {
 
         // 社員情報一覧表示のため社員情報テーブルのデータを取得する
         EntityManager em = DBUtil.createEntityManager();
-        List<Employee> employees = em.createNamedQuery("getAllEmployeesNotDeleted", Employee.class)
+        List<Employee> employees = em.createNamedQuery("getAllSalesEmployeesNotDeleted", Employee.class)
                 .getResultList();
         em.close();
         request.setAttribute("employees", employees);
