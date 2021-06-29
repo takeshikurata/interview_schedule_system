@@ -17,13 +17,13 @@ import utils.DBUtil;
  * Servlet implementation class DepartmentDestroyServlet
  */
 @WebServlet("/departments/destroy")
-public class DepartmentDestroyServlet extends HttpServlet {
+public class DepartmentsDestroyServlet extends HttpServlet {
     private static final long serialVersionUID = 1L;
 
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public DepartmentDestroyServlet() {
+    public DepartmentsDestroyServlet() {
         super();
     }
 
