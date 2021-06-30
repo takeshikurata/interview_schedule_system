@@ -192,7 +192,7 @@ public class SchedulesCreateServlet extends HttpServlet {
             if(errors.size() > 0) {
 
                 // 社員情報一覧表示のため社員情報テーブルのデータを取得する
-                List<Employee> employees = em.createNamedQuery("getAllEmployeesNotDeleted", Employee.class)
+                List<Employee> employees = em.createNamedQuery("getAllSalesEmployeesNotDeleted", Employee.class)
                         .getResultList();
                 request.setAttribute("employees", employees);
 
