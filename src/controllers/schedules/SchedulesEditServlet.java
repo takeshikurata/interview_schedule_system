@@ -38,8 +38,8 @@ public class SchedulesEditServlet extends HttpServlet {
 
         Schedule s = em.find(Schedule.class, Integer.parseInt(request.getParameter("id")));
 
-        // 社員名一覧表示のため部署情報テーブルのデータを取得する
-        List<Employee> employees = em.createNamedQuery("getAllEmployeesNotDeleted", Employee.class)
+        // 社員名一覧表示のため社員情報テーブルのデータを取得する
+        List<Employee> employees = em.createNamedQuery("getAllSalesEmployeesNotDeleted", Employee.class)
                 .getResultList();
 
         em.close();
